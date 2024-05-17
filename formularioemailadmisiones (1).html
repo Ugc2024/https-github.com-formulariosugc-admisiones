@@ -1,0 +1,1833 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body {
+
+font-family: 'Agency FB', sans-serif;
+
+text-align: center;
+
+margin: 0;
+
+padding: 0;
+
+background: url('https://ulgc.file.force.com/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Jpg&versionId=068Uy000007Zj4g&operationContext=CHATTER&contentId=05TUy00000A8nnU') no-repeat center center fixed;
+
+background-size: cover;
+
+}
+
+ 
+
+.form-container {
+
+max-width: 350px;
+
+margin: 30px auto 30px;
+
+padding: 20px;
+
+border-radius: 10px;
+
+background-color: rgba(255, 255, 255, 0.9);
+
+box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+ 
+
+.logo {
+
+max-width: 140px;
+
+margin: 0 auto 10px;
+
+}
+
+ 
+
+.second-logo {
+
+max-width: 290px;
+
+margin-top: 10px;
+
+}
+
+ 
+
+.form-container h2 {
+
+font-family: 'Agency FB', sans-serif;
+
+color: #00460f;
+
+margin-bottom: 20 px;
+
+margin-top: 0;
+
+line-height: 0.80;
+
+text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.4);
+
+font-size: 2em;
+
+}
+
+ 
+
+.form-container label {
+
+font-weight: bold;
+
+display: block;
+
+margin-top: 10px;
+
+color: #00000;
+
+}
+
+ 
+
+.form-container select,
+
+.form-container input[type="text"] {
+
+width: 100%;
+
+padding: 8px;
+
+margin: 5px 0;
+
+border: 1px solid #ccc;
+
+border-radius: 4px;
+
+box-sizing: border-box;
+
+text-align: center;
+
+}
+
+ 
+
+.form-container input[type="submit"] {
+
+background-color: #00913d;
+
+color: white;
+
+border: none;
+
+padding: 10px 20px;
+
+border-radius: 4px;
+
+cursor: pointer;
+
+transition: background-color 0.9s ease;
+
+}
+
+ 
+
+.form-container input[type="submit"]:hover {
+
+background-color: #5c9e31;
+
+}
+
+ 
+
+.form-container label {
+
+font-size: 18px;
+
+line-height: 1.5;
+
+}
+
+ 
+
+.form-container input[type="submit"]:hover {
+
+background-color: #8FBC8F;
+
+}
+
+ 
+
+.authorization label,
+
+.authorization span,
+
+.authorization a {
+
+display: inline-block;
+
+vertical-align: middle;
+
+margin-bottom: 0;
+
+}
+
+ 
+
+.authorization a {
+
+display: inline-block;
+
+margin-top: -30px;
+
+color: #0051FF;
+
+}
+
+ 
+
+font-family: 'Roboto', sans-serif;
+
+display: inline-block;
+
+vertical-align: middle;
+
+ 
+
+.form-container input[type="submit"]:active {
+
+background-color: #405732;
+
+}
+
+ 
+
+.form-container input[type="text"],
+
+.form-container select {
+
+font-family: 'Roboto', sans-serif;
+
+font-size: 12px;
+
+width: 100%;
+
+padding: 8px;
+
+margin: 5px 0;
+
+border: 1px solid #ccc;
+
+border-radius: 4px;
+
+box-sizing: border-box;
+
+text-align: center;
+
+}
+
+ 
+
+a:hover {
+
+color: #331A6D;
+
+}
+
+ 
+
+.hidden {
+
+display: none;
+
+}
+
+.salesforce-logo {
+
+max-width:45px;
+
+margin-top:10px;
+
+}
+
+</style>
+
+ 
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+
+</head>
+
+<body>
+
+<div class="form-container">
+
+<img class="logo second-logo" src="https://i.imgur.com/v2apVvt.png" alt="Second Logo">
+
+<h2>Campaña Correo Electronico
+ <br>
+  <br>
+  2024-2S
+</h2>
+
+<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+    <br>
+
+<input type="hidden" name="oid" value="00D2E0000012pRa">
+
+<input type="hidden" name="retURL" value="http://www.ugc.edu.co/landing/gracias">
+
+<input type="hidden" name="company" value="Email-Admisiones 2024-2">
+
+<br>
+
+<label for="first_name">Nombre:</label>
+
+<input id="first_name" maxlength="40" name="first_name" size="20" type="text">
+
+<label for="last_name">Apellidos:</label>
+
+<input id="last_name" maxlength="80" name="last_name" size="20" type="text">
+
+<label for="numero_documento">Número de documento:</label>
+
+<input id="numero_documento" name="Numero_Documento__c" type="text" maxlength="20" size="20" pattern="[0-9]+">
+
+<label for="tipo_documento">Tipo de documento:</label>
+
+<select id="tipo_documento" name="Tipo_documento__c" title="Tipo de Documento">
+
+<option value="">-- Seleccione --</option>
+
+<option value="C">Cédula de Ciudadanía</option>
+
+<option value="T">Tarjeta de Identidad</option>
+
+</select>
+
+<label for="confirmar_correo" class="hidden" style="display:none;">Confirmar Correo:</label>
+
+<input id="confirmar_correo" maxlength="80" name="Confirmar_Correo_Electronico__c" size="20" type="text" class="hidden" style="display:none;">
+
+ 
+
+<label for="telefono" class="hidden" style="display:none;">Teléfono:</label>
+
+<input id="telefono" maxlength="10" name="Celular__c" size="20" type="tel" pattern="[0-9]{10}" title="El número de teléfono debe contener 10 dígitos" class="hidden" style="display:none;">
+
+ 
+
+<label for="email">Correo electrónico:</label>
+
+<input id="email" maxlength="80" name="email" size="20" type="text" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Ingresa una dirección de correo electrónico válida" required>
+
+ 
+
+<label for="confirmar_correo" style="display: none;">Confirmar Correo:</label>
+
+<input id="confirmar_correo" maxlength="80" name="Confirmar_Correo_Electronico__c" size="20" type="text" style="display: none;">
+
+<label for="phone">Célular:</label>
+
+<input id="phone" maxlength="10" name="phone" size="20" type="text" pattern="\d{10}" title="Ingresa un número de 10 dígitos" required>
+
+ 
+
+<label for="telefono" style="display: none;">Teléfono:</label>
+
+<input id="telefono" maxlength="10" name="Celular__c" size="20" type="text" pattern="\d{10}" title="Ingresa un número de 10 dígitos" style="display: none;">
+
+ 
+
+<label for="Nivel_Academico__c">Nivel académico:</label>
+
+<select id="Nivel_Academico__c" name="Nivel_Academico__c" title="Nivel Académico" onchange="toggleProgramOptions(this)">
+
+<option value="">--Ninguno--</option>
+
+<option value="1">Pregrados</option>
+
+<option value="2">Especializaciones </option>
+
+<option value="3">Maestrías </option>
+
+</select>
+
+<label for="programa">Programa académico:</label>
+
+<select id="programa" name="00N2E00000IJxt1" title="Programa académico">
+
+<option value="">--Ninguno--</option>
+
+</select>
+
+<!-- Nuevo campo: Plan de Estudios -->
+
+<label for="plan_estudios" style="display: none;">Plan de Estudios:</label>
+
+<select id="plan_estudios" name="HBT_Plan_de_estudios__c" title="Plan de Estudios" style="display: none;">
+
+</select>
+
+ 
+
+<!-- Nuevo campo: Periodo Académico -->
+
+<label for="HBT_Periodo_academico__c" style="display: none;">Periodo académico:</label>
+
+<select id="HBT_Periodo_academico__c" name="HBT_Periodo_academico__c" style="display: none;">
+
+<option value="">-- Seleccione --</option>
+
+<option value="0242S">2024-2S</option>
+
+<option value="0242E">2024-2E</option>
+
+<option value="0242M">2024-2M</option>
+
+</select>
+
+ 
+
+<label for="grade" id="gradoLabel">Grado:</label>
+
+<select id="grade" name="00N4U000008Fhqz" title="Grado">
+
+<option value="">--Ninguno--</option>
+
+<option value="No especifica">No especifica</option>
+
+<option value="Ya graduado">Ya graduado</option>
+
+<option value="11">Once</option>
+
+<option value="10">Decimo</option>
+
+<option value="9">Noveno</option>
+
+<option value="12">Técnico o Tecnologo</option>
+
+<option value="13">Egresado SENA</option>
+
+<option value="14">Otra universidad</option>
+
+<!-- Otras opciones del campo Grado... -->
+
+</select>
+
+<label for="genero">Género:</label>
+
+<select id="genero" name="Genero__c" title="Género">
+
+<option value="">-- Seleccione --</option>
+
+<option value="F">Femenino</option>
+
+<option value="M">Masculino</option>
+
+<option value="NB">No binario</option>
+
+</select>
+
+</select>
+
+<label for="medio_entero_universidad" style="display: none;">Por donde se enteró de la Universidad:</label>
+
+<input id="medio_entero_universidad" name="Medio_entero_Universidad__c" type="text" value="20" style="display: none;">
+
+</select>
+
+<!-- Casilla de autorización -->
+
+<div class="authorization">
+
+<label for="authorize"><input type="checkbox" id="authorize" name="authorize" required></label>
+
+<span style="font-size: 0.80em;">Autorizo el tratamiento de mis datos personales.</span>
+
+<a href="https://www.ugc.edu.co/sede/bogota/documentos/ministerio/politica_tratamiento_de_la_informacion.pdf" target="_blank" style="font-size: 0.75em; color: #0003f; text-decoration: none;">
+
+Ver política de tratamiento de la información
+
+</a>
+
+</div>
+
+<br>
+
+<input type="submit" name="submit" value="Enviar">
+
+</form>
+
+<!-- Logotipo de Salesforce -->
+
+<img src="https://i.imgur.com/gPDkPxB.png" alt="Logo Salesforce" class="salesforce-logo">
+
+</div>
+
+<script>
+
+function toggleProgramOptions(selectElement) {
+
+var nivelAcademico = selectElement.value; // Obtener el valor seleccionado
+
+ 
+
+var programaSelect = document.getElementById('programa');
+
+var planEstudiosLabel = document.querySelector('label[for="plan_estudios"]');
+
+var planEstudiosSelect = document.getElementById('plan_estudios');
+
+var gradeLabel = document.getElementById('gradoLabel');
+
+var gradeSelect = document.getElementById('grade');
+
+var periodoAcademicoSelect = document.getElementById('HBT_Periodo_academico__c');
+
+ 
+
+// Ocultar el label y el campo de "Plan de Estudios" en todo momento
+
+planEstudiosLabel.style.display = 'none';
+
+planEstudiosSelect.style.display = 'none';
+
+// Limpiar las opciones actuales
+
+programaSelect.innerHTML = '';
+
+planEstudiosSelect.innerHTML = '';
+
+ 
+
+if (nivelAcademico === '1') { // Pregrado
+
+programaSelect.style.display = 'block';
+
+planEstudiosSelect.style.display = 'none';  // Oculta el campo de "Plan de Estudios"
+
+gradeLabel.style.display = 'block';
+
+gradeSelect.style.display = 'block';
+
+planEstudiosLabel.style.display = 'none';  // Asegúrate de ocultar el label del plan de estudios
+
+ 
+
+// Asignar opciones para Pregrado
+
+var option1 = document.createElement('option');
+
+option1.text = '--Ninguno--';
+
+option1.value = '';
+
+programaSelect.add(option1);
+
+ 
+
+var option2 = document.createElement('option');
+
+option2.text = 'Administración de Empresas Virtual';
+
+option2.value = 'B023';
+
+programaSelect.add(option2);
+
+ 
+
+var option3 = document.createElement('option');
+
+option3.text = 'Contaduría Pública Virtual';
+
+option3.value = 'B020';
+
+programaSelect.add(option3);
+
+ 
+
+var option4 = document.createElement('option');
+
+option4.text = 'Economía Virtual';
+
+option4.value = 'B025';
+
+programaSelect.add(option4);
+
+ 
+
+var option5 = document.createElement('option');
+
+option5.text ='Administración de Empresas';
+
+option5.value = 'B024'
+
+programaSelect.add(option5)
+
+ 
+
+var option6 = document.createElement('option');
+
+option6.text ='Contaduría Pública'
+
+option6.value = 'B041'
+
+programaSelect.add(option6)
+
+ 
+
+var option7 = document.createElement('option');
+
+option7.text ='Economia'
+
+option7.value = 'B014'
+
+programaSelect.add(option7)
+
+ 
+
+var option8 = document.createElement('option');
+
+option8.text ='Arquitectura'
+
+option8.value = 'B022'
+
+programaSelect.add(option8)
+
+ 
+
+var option9 = document.createElement('option');
+
+option9.text ='Ingeniería Civil'
+
+option9.value = 'B011'
+
+programaSelect.add(option9)
+
+ 
+
+var option10 = document.createElement('option');
+
+option10.text ='Derecho'
+
+option10.value = 'B015'
+
+programaSelect.add(option10)
+
+ 
+
+var option11 = document.createElement('option');
+
+option11.text = 'Comunicación Social y Periodismo'
+
+option11.value = 'B044'
+
+programaSelect.add(option11)
+
+ 
+
+var option12 = document.createElement('option');
+
+option12.text ='Gobierno y Relaciones Internacionales'
+
+option12.value = 'B013'
+
+programaSelect.add(option12)
+
+ 
+
+var option13 = document.createElement('option');
+
+option13.text = 'Licenciatura en Ciencias Sociales';
+
+option13.value = 'B007';
+
+programaSelect.add(option13);
+
+ 
+
+var option14 = document.createElement('option');
+
+option14.text = 'Licenciatura en Educación Infantil';
+
+option14.value = 'B032';
+
+programaSelect.add(option14);
+
+ 
+
+var option16 = document.createElement('option');
+
+option16.text = 'Licenciatura en Filosofia';
+
+option16.value = 'B031';
+
+programaSelect.add(option16);
+
+ 
+
+var option15 = document.createElement('option');
+
+option15.text = 'Licenciatura en Humanidades y Lengua Castellana';
+
+option15.value = 'B006';
+
+programaSelect.add(option15);
+
+ 
+
+var option17 = document.createElement('option');
+
+option17.text = 'Licenciatura en Lenguas Modernas con Énfasis en Inglés';
+
+option17.value = 'B004';
+
+programaSelect.add(option17);
+
+ 
+
+var option18 = document.createElement('option');
+
+option18.text = 'Licenciatura en Matemáticas';
+
+option18.value = 'B002';
+
+programaSelect.add(option18);
+
+ 
+
+// Asignar planes de estudio según el programa seleccionado
+
+programaSelect.addEventListener('change', function() {
+
+updatePlanEstudios();
+
+});
+
+ 
+
+// Actualizar el valor del campo "Periodo Académico" para Pregrados
+
+periodoAcademicoSelect.value = '0242S';
+
+} else if (nivelAcademico === '2') { // Especializaciones
+
+programaSelect.style.display = 'block';
+
+planEstudiosSelect.style.display = 'none';  // Oculta el campo de "Plan de Estudios"
+
+gradeLabel.style.display = 'none';
+
+gradeSelect.style.display = 'none';
+
+planEstudiosLabel.style.display = 'none';  // Asegúrate de ocultar el label del plan de estudios
+
+ 
+
+var option19 = document.createElement('option');
+
+option19.text = '--Ninguno--';
+
+option19.value = '';
+
+programaSelect.add(option19);
+
+ 
+
+var option20 = document.createElement('option');
+
+option20.text = 'Especialización en Casación Penal';
+
+option20.value = 'B040';
+
+programaSelect.add(option20);
+
+ 
+
+var option21 = document.createElement('option');
+
+option21.text = 'Especialización en Contratación Estatal';
+
+option21.value = 'B039';
+
+programaSelect.add(option21);
+
+ 
+
+var option22 = document.createElement('option');
+
+option22.text = 'Especialización Contratación Estatal Virtual';
+
+option22.value = 'B080';
+
+programaSelect.add(option22);
+
+ 
+
+var option23 = document.createElement('option');
+
+option23.text = 'Especialización en Derecho Administrativo';
+
+option23.value = 'B017';
+
+programaSelect.add(option23);
+
+ 
+
+var option24 = document.createElement('option');
+
+option24.text = 'Especialización en Derecho de Familia';
+
+option24.value = 'B029';
+
+programaSelect.add(option24);
+
+ 
+
+var option25 = document.createElement('option');
+
+option25.text = 'Especialización en Derecho De Familia Virtual';
+
+option25.value = 'B081';
+
+programaSelect.add(option25);
+
+ 
+
+var option26 = document.createElement('option');
+
+option26.text = 'Especialización en Derecho Laboral Y Seguridad Social';
+
+option26.value = 'B076';
+
+programaSelect.add(option26);
+
+ 
+
+var option27 = document.createElement('option');
+
+option27.text = 'Especialización en derecho penal y procesal';
+
+option27.value = 'B082';
+
+programaSelect.add(option27);
+
+ 
+
+var option28 = document.createElement('option');
+
+option28.text = 'Especialización en Casación Penal Virtual';
+
+option28.value = 'B079';
+
+programaSelect.add(option28);
+
+ 
+
+var option29 = document.createElement('option');
+
+option29.text = 'Especialización en Gerencia';
+
+option29.value = 'B037';
+
+programaSelect.add(option29);
+
+ 
+
+var option30 = document.createElement('option');
+
+option30.text = 'Especialización en Gerencia virtual';
+
+option30.value = 'B075';
+
+programaSelect.add(option30);
+
+ 
+
+var option31 = document.createElement('option');
+
+option31.text = 'Especialización en Control de Gestión y Revisoría Fiscal';
+
+option31.value = 'B038';
+
+programaSelect.add(option31);
+
+ 
+
+var option32 = document.createElement('option');
+
+option32.text = 'Especialización en Gerencia Financiera';
+
+option32.value = 'B036';
+
+programaSelect.add(option32);
+
+ 
+
+var option33 = document.createElement('option');
+
+option33.text = 'Especialización en Gerencia Tributaria';
+
+option33.value = 'B035';
+
+programaSelect.add(option33);
+
+ 
+
+var option34 = document.createElement('option');
+
+option34.text = 'Especialización en Inteligencia de Mercados';
+
+option34.value = 'B073';
+
+programaSelect.add(option34);
+
+ 
+
+var option35 = document.createElement('option');
+
+option35.text = 'Especialización en Inteligencia de Mercados y Comercio Electrónico Virtual';
+
+option35.value = 'B074';
+
+programaSelect.add(option35);
+
+ 
+
+var option36 = document.createElement('option');
+
+option36.text = 'Especialización en Pedagogía y Docencia Universitaria';
+
+option36.value = 'B033';
+
+programaSelect.add(option36);
+
+ 
+
+var option37 = document.createElement('option');
+
+option37.text = 'Especialización en diseño y construcción de obras de infraestructura y edificaciones';
+
+option37.value = 'B078';
+
+programaSelect.add(option37);
+
+// Asignar planes de estudio según el programa seleccionado
+
+programaSelect.addEventListener('change', function() {
+
+updatePlanEstudios();
+
+});
+
+ 
+
+// Actualizar el valor del campo "Periodo Académico" para Especializaciones
+
+periodoAcademicoSelect.value = '0242E';
+
+} else if (nivelAcademico === '3') { // Maestría
+
+programaSelect.style.display = 'block';
+
+planEstudiosSelect.style.display = 'none';  // Oculta el campo de "Plan de Estudios"
+
+gradeLabel.style.display = 'none';
+
+gradeSelect.style.display = 'none';
+
+planEstudiosLabel.style.display = 'none';  // Asegúrate de ocultar el label del plan de estudios
+
+ 
+
+var option38 = document.createElement('option');
+
+option38.text = '--Ninguno--';
+
+option38.value = '';
+
+programaSelect.add(option38);
+
+ 
+
+var option39 = document.createElement('option');
+
+option39.text = 'Maestría en Representación Política y Gestión Pública Virtual';
+
+option39.value = 'B084';
+
+programaSelect.add(option39);
+
+ 
+
+option40 = document.createElement('option');
+
+option40.text = 'Maestría en Contabilidad';
+
+option40.value = 'B030';
+
+programaSelect.add(option40);
+
+ 
+
+var option41 = document.createElement('option');
+
+option41.text = 'Maestría en Derecho';
+
+option41.value = 'B016';
+
+programaSelect.add(option41);
+
+ 
+
+var option42 = document.createElement('option');
+
+option42.text = 'Maestría en Economía Social';
+
+option42.value = 'B028';
+
+programaSelect.add(option42);
+
+ 
+
+var option43 = document.createElement('option');
+
+option43.text = 'Maestría en Educación';
+
+option43.value = 'B027';
+
+programaSelect.add(option43);
+
+ 
+
+var option44 = document.createElement('option');
+
+option44.text = 'Maestría en Planeación y Gestión del Hábitat Territorial Sostenible';
+
+option44.value = 'B026';
+
+programaSelect.add(option44);
+
+ 
+
+var option45 = document.createElement('option');
+
+option45.text = 'Maestría en Economía del Desarrollo';
+
+option45.value = 'B077';
+
+programaSelect.add(option45);
+
+ 
+
+var option46 = document.createElement('option');
+
+option46.text = 'Maestría en representación política y gestión pública';
+
+option46.value = 'B083';
+
+programaSelect.add(option46);
+
+ 
+
+var option47 = document.createElement('option');
+
+option47.text = 'Maestría en representación política y gestión pública virtual';
+
+option47.value = 'B084';
+
+programaSelect.add(option47);
+
+ 
+
+// Asignar planes de estudio según el programa seleccionado
+
+programaSelect.addEventListener('change', function() {
+
+updatePlanEstudios();
+
+});
+
+ 
+
+// Actualizar el valor del campo "Periodo Académico" para Maestrías
+
+periodoAcademicoSelect.value = '0242M';
+
+}
+
+}
+
+ 
+
+// Función para actualizar el plan de estudios
+
+function updatePlanEstudios() {
+
+var selectedProgram = document.getElementById('programa').value;
+
+var planEstudiosSelect = document.getElementById('plan_estudios');
+
+planEstudiosSelect.innerHTML = ''; // Limpiar las opciones actuales
+
+ 
+
+if (selectedProgram === 'B023') { // Administración de Empresas Virtual
+
+var planOption1 = document.createElement('option');
+
+planOption1.text = 'PB124';
+
+planOption1.value = 'PB124';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption1);
+
+} else if (selectedProgram === 'B020') { // Contaduría Pública Virtual
+
+var planOption2 = document.createElement('option');
+
+planOption2.text = 'PB123';
+
+planOption2.value = 'PB123';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption2);
+
+} else if (selectedProgram === 'B025') { // Economía Virtual
+
+var planOption3 = document.createElement('option');
+
+planOption3.text = 'PB122';
+
+planOption3.value = 'PB122';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption3);
+
+
+} else if (selectedProgram === 'B024') { // Administración de Empresas
+
+var planOption3 = document.createElement('option');
+
+planOption3.text = 'PB161';
+
+planOption3.value = 'PB161';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption3);
+
+
+
+} else if (selectedProgram === 'B075') { // Especialización en Gerencia virtual
+
+var planOption4 = document.createElement('option');
+
+planOption4.text = 'PB163';
+
+planOption4.value = 'PB163';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption4);
+
+} else if (selectedProgram === 'B041') { // Contaduria Pública
+
+var planOption5 = document.createElement('option');
+
+planOption5.text = 'PB169';
+
+planOption5.value = 'PB169';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption5);
+
+} else if (selectedProgram === 'B014') { // Economía
+
+var planOption6 = document.createElement('option');
+
+planOption6.text = 'PB159';
+
+planOption6.value = 'PB159';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption6);
+
+} else if (selectedProgram === 'B022') { // Arquitectura
+
+var planOption7 = document.createElement('option');
+
+planOption7.text = 'PB064';
+
+planOption7.value = 'PB064';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption7);
+
+} else if (selectedProgram === 'B011') { // Ingeniería Civil
+
+var planOption8 = document.createElement('option');
+
+planOption8.text = 'PB114';
+
+planOption8.value = 'PB114';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption8);
+
+} else if (selectedProgram === 'B015') { // Derecho
+
+var planOption9 = document.createElement('option');
+
+planOption9.text = 'PB118';
+
+planOption9.value = 'PB118';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption9);
+
+} else if (selectedProgram === 'B044') { // Comunicación Social y Periodismo
+
+var planOption10 = document.createElement('option');
+
+planOption10.text = 'PB125';
+
+planOption10.value = 'PB125';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption10);
+
+} else if (selectedProgram === 'B013') { // Gobierno y Relaciones Internacionales
+
+var planOption11 = document.createElement('option');
+
+planOption11.text = 'PB117';
+
+planOption11.value = 'PB117';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption11);
+
+ 
+
+} else if (selectedProgram === 'B040') { // Especialización en Casación Penal
+
+var planOption12 = document.createElement('option');
+
+planOption12.text = 'PB158';
+
+planOption12.value ='PB158'
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption12);
+
+ 
+
+} else if (selectedProgram === 'B039') { // Especialización en Contratación Estatal
+
+var planOption13 = document.createElement('option');
+
+planOption13.text = 'PB157';
+
+planOption13.value = 'PB157';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption13);
+
+ 
+
+} else if (selectedProgram === 'B080') { // Especialización Contratación Estatal Virtual
+
+var planOption14 = document.createElement('option');
+
+planOption14.text = 'PB176';
+
+planOption14.value = 'PB176';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption14);
+
+ 
+
+} else if (selectedProgram === 'B017') { // Especialización en Derecho Administrativo
+
+var planOption15 = document.createElement('option');
+
+planOption15.text = 'PB166';
+
+planOption15.value = 'PB166';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption15);
+
+ 
+
+} else if (selectedProgram === 'B029') { // Especialización en Derecho de Familia
+
+var planOption16 = document.createElement('option');
+
+planOption16.text = 'PB168';
+
+planOption16.value = 'PB168';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption16);
+
+// Agregar bloques similares para otros programas si es necesario
+
+ 
+
+} else if (selectedProgram === 'B076') { // Especialización en Derecho Laboral Y Seguridad Social
+
+var planOption17 = document.createElement('option');
+
+planOption17.text = 'PB167';
+
+planOption17.value = 'PB167';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption17);
+
+ 
+
+} else if (selectedProgram === 'B082') { // Especialización en derecho penal y procesal
+
+var planOption18 = document.createElement('option');
+
+planOption18.text = 'PB183';
+
+planOption18.value = 'PB183';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption18);
+
+ 
+
+} else if (selectedProgram === 'B079') { // Especialización en Casación Penal Virtual
+
+var planOption22 = document.createElement('option');
+
+planOption22.text = 'PB175';
+
+planOption22.value = 'PB175';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption22);
+
+// Agregar bloques similares para otros programas si es necesario
+
+ 
+
+} else if (selectedProgram === 'B037') { // Especialización en Gerencia
+
+var planOption23 = document.createElement('option');
+
+planOption23.text = 'PB162';
+
+planOption23.value = 'PB162';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption23);
+
+ 
+
+} else if (selectedProgram === 'B075') { // Especialización en Gerencia virtual
+
+var planOption24 = document.createElement('option');
+
+planOption24.text = 'PB163';
+
+planOption24.value = 'PB163';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption24);
+
+ 
+
+} else if (selectedProgram === 'B038') { // Especialización en Control de Gestión y Revisoría Fiscal
+
+var planOption25 = document.createElement('option');
+
+planOption25.text = 'PB182';
+
+planOption25.value = 'PB182';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption25);
+
+ 
+
+} else if (selectedProgram === 'B036') { // Especialización en Gerencia Financiera
+
+var planOption26 = document.createElement('option');
+
+planOption26.text = 'PB181';
+
+planOption26.value = 'PB181';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption26);
+
+ 
+
+} else if (selectedProgram === 'B035') { // Especialización en Gerencia Tributaria
+
+var planOption27 = document.createElement('option');
+
+planOption27.text = 'PB180';
+
+planOption27.value = 'PB180';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption27);
+
+ 
+
+ 
+
+} else if (selectedProgram === 'B073') { // Especialización en Inteligencia de Mercados
+
+var planOption28 = document.createElement('option');
+
+planOption28.text = 'PB164';
+
+planOption28.value = 'PB164';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption28);
+
+ 
+
+} else if (selectedProgram === 'B074') { // Especialización en Inteligencia de Mercados y Comercio Electrónico Virtual
+
+var planOption29 = document.createElement('option');
+
+planOption29.text = 'PB165';
+
+planOption29.value = 'PB165';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption29);
+
+ 
+
+ 
+
+} else if (selectedProgram === 'B033') { // Especialización en Pedagogía y Docencia Universitaria
+
+var planOption30 = document.createElement('option');
+
+planOption30.text = 'PB100';
+
+planOption30.value = 'PB100';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption30);
+
+ 
+
+} else if (selectedProgram === 'B078') { // Especialización en diseño y construcción de obras de infraestructura y edificaciones
+
+var planOption31 = document.createElement('option');
+
+planOption31.text = 'PB171';
+
+planOption31.value = 'PB171';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption31);
+
+ 
+
+ 
+
+ 
+
+} else if (selectedProgram === 'B007') {
+
+var planOption13 = document.createElement('option');
+
+planOption13.text = 'PB115';
+
+planOption13.value = 'PB115';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption13);
+
+ 
+
+ 
+
+} else if (selectedProgram === 'B032') {
+
+var planOption14 = document.createElement('option');
+
+planOption14.text = 'PB121';
+
+planOption14.value = 'PB121';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption14);
+
+ 
+
+ 
+
+} else if (selectedProgram === 'B031') {
+
+var planOption15 = document.createElement('option');
+
+planOption15.text = 'PB113';
+
+planOption15.value = 'PB113';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption15);
+
+ 
+
+ 
+
+} else if (selectedProgram === 'B006') {
+
+var planOption16 = document.createElement('option');
+
+planOption16.text = 'PB112';
+
+planOption16.value = 'PB112';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption16);
+
+ 
+
+ 
+
+} else if (selectedProgram === 'B004') {
+
+var planOption17 = document.createElement('option');
+
+planOption17.text = 'PB116';
+
+planOption17.value = 'PB116';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption17);
+
+ 
+
+// Bloque para Licenciatura en Matemáticas
+
+} else if (selectedProgram === 'B002') {
+
+var planOption18 = document.createElement('option');
+
+planOption18.text = 'PB120';
+
+planOption18.value = 'PB120';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption18);
+
+// Agregar bloques similares para otros programas si es necesario
+
+// ... Código existente
+
+ 
+
+} else if (selectedProgram === 'B030') { // Maestría en Contabilidad
+
+var planOption40 = document.createElement('option');
+
+planOption40.text = 'PB131';
+
+planOption40.value = 'PB131';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption40);
+
+ 
+
+} else if (selectedProgram === 'B016') { // Maestría en Derecho
+
+var planOption41 = document.createElement('option');
+
+planOption41.text = 'PB132';
+
+planOption41.value = 'PB132';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption41);
+
+ 
+
+} else if (selectedProgram === 'B028') { // Maestría en Economía Social
+
+var planOption42 = document.createElement('option');
+
+planOption42.text = 'PB128';
+
+planOption42.value = 'PB128';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption42);
+
+ 
+
+} else if (selectedProgram === 'B027') { // Maestría en Educación
+
+var planOption43 = document.createElement('option');
+
+planOption43.text = 'PB133';
+
+planOption43.value = 'PB133';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption43);
+
+ 
+
+} else if (selectedProgram === 'B026') { // Maestría en Planeación y Gestión del Hábitat Territorial Sostenible
+
+var planOption44 = document.createElement('option');
+
+planOption44.text = 'PB127';
+
+planOption44.value = 'PB127';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption44);
+
+ 
+
+} else if (selectedProgram === 'B077') { // Maestría en Economía del Desarrollo
+
+var planOption45 = document.createElement('option');
+
+planOption45.text = 'PB178';
+
+planOption45.value = 'PB178';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption45);
+
+ 
+
+} else if (selectedProgram === 'B083') { // Maestría en representación política y gestión pública
+
+var planOption46 = document.createElement('option');
+
+planOption46.text = 'PB083';
+
+planOption46.value = 'PB083';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption46);
+
+ 
+
+} else if (selectedProgram === 'B083') { // Maestría en representación política y gestión pública
+
+var planOption46 = document.createElement('option');
+
+planOption46.text = 'PB083';
+
+planOption46.value = 'PB083';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption46);
+
+ 
+
+} else if (selectedProgram === 'B084') { // Maestría en representación política y gestión pública virtual
+
+var planOption47 = document.createElement('option');
+
+planOption47.text = 'PB179';
+
+planOption47.value = 'PB179';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption47);
+
+ 
+
+} else if (selectedProgram === 'B081') { // Especilización en Derecho de Familia Virtual
+
+var planOption47 = document.createElement('option');
+
+planOption47.text = 'PB167';
+
+planOption47.value = 'PB167';
+
+planEstudiosSelect.innerHTML = '';
+
+planEstudiosSelect.add(planOption47);
+
+}
+
+}
+
+ 
+
+// Función para agregar una opción al plan de estudios
+
+function addPlanEstudioOption(value) {
+
+var planEstudiosSelect = document.getElementById('plan_estudios');
+
+var planOption = document.createElement('option');
+
+planOption.text = value;
+
+planOption.value = value;
+
+planEstudiosSelect.add(planOption);
+
+}
+
+ 
+
+// Llama a la función inicialmente para cargar las opciones del "Programa académico" basadas en el valor inicial del "Nivel Académico"
+
+toggleProgramOptions(document.getElementById('Nivel_Academico__c'));
+
+ 
+
+// Mapear el valor del campo "Programa académico" solo si es "Maestrías" y el valor actual es "3"
+
+if (nivelAcademico === '3' && programaAcademico === '3') {
+
+document.getElementById('programa').value = '2';  // Cambia a "2" en lugar de "3"
+
+}
+
+ 
+
+</script>
+
+<script type="text/javascript">
+
+// Función para convertir texto a mayúsculas al enviar el formulario
+
+function convertirAMayusculas() {
+
+var elementosDeTexto = document.querySelectorAll('input[type="text"], textarea');
+
+elementosDeTexto.forEach(function(elemento) {
+
+elemento.value = elemento.value.toUpperCase();
+
+});
+
+}
+
+ 
+
+// Asigna la función de conversión a un evento del formulario (por ejemplo, en el evento "submit")
+
+document.addEventListener("DOMContentLoaded", function() {
+
+var formulario = document.querySelector('form');
+
+formulario.addEventListener('submit', convertirAMayusculas);
+
+});
+
+</script>
+
+<script>
+
+// Obtén una referencia a los campos "Correo Electrónico" y "Célular"
+
+var correoElectronicoField = document.getElementById('email');
+
+var celularField = document.getElementById('phone');
+
+var confirmarCorreoField = document.getElementById('confirmar_correo');
+
+var telefonoField = document.getElementById('telefono');
+
+ 
+
+// Agrega un evento "input" al campo "Correo Electrónico"
+
+correoElectronicoField.addEventListener('input', function() {
+
+// Copia el valor del campo "Correo Electrónico" al campo "Confirmar Correo"
+
+confirmarCorreoField.value = correoElectronicoField.value;
+
+});
+
+ 
+
+// Agrega un evento "input" al campo "Célular"
+
+celularField.addEventListener('input', function() {
+
+// Copia el valor del campo "Célular" al campo "Teléfono"
+
+telefonoField.value = celularField.value;
+
+});
+
+</script>
+
+</body>
+
+</html>
